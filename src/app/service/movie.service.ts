@@ -14,5 +14,8 @@ export class MovieService {
   public findAll(): Observable<Movie[]> {
     return this.http.get<Movie[]>(this.moviesUrl);
   }
+  public save(movie: Movie) {
+    return this.http.post<Movie>(this.moviesUrl, movie);
+  }
 
 }
