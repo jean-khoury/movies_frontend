@@ -4,7 +4,7 @@ import { Movie } from '../model/movie';
 import { Observable } from 'rxjs/Observable';
 
 @Injectable()
-export class MovieServiceService {
+export class MovieService {
 
   private moviesUrl: string;
 
